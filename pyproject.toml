@@ -8,6 +8,7 @@ packages = [{include = "dbt_metadata_client"}]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.10"
+sgqlc = "^16.0"
 
 
 [build-system]
