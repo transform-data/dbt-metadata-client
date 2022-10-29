@@ -11,6 +11,30 @@ python = ">=3.8,<3.10"
 sgqlc = "^16.0"
 
 
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.18.0"
+
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py36', 'py37', 'py38']
+force-exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
