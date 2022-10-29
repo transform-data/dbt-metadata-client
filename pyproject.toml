@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "dbt-metadata-client"
+version = "0.1.0"
+description = "A simple python client for interacting with dbt's metadata API"
+authors = ["Transform <hello@transformdata.io>"]
+readme = "README.md"
+packages = [{include = "dbt_metadata_client"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
